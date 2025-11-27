@@ -34,7 +34,7 @@ def main(stdscr):
     help_win = curses.newwin(help_h, help_w, h-1, 0)
     help_win.addstr(0, 0, " NORMAL ", curses.A_BOLD | BLUE | curses.A_REVERSE )
     help_win.addstr(0, help_w-4, "   ", curses.A_BOLD)
-    help_win.addstr(0, help_w//2-(8//2), "h - HELP", WHITE)
+    help_win.addstr(0, help_w//2-(8//2), "H - HELP", WHITE)
     help_win.refresh()
 
     todo_h, todo_w = h-2, w//3
@@ -145,7 +145,7 @@ def main(stdscr):
 
         if key == ord('q'):
             break
-        elif key == ord('h'):
+        elif key == ord('H'):
             help_screen()
         elif key == 27:
             help_win.addstr(0, 0, " NORMAL ", curses.A_BOLD | BLUE | curses.A_REVERSE)

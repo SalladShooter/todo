@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: todo-terminal
-Version: 0.1.0
+Version: 0.1.3
 Summary: A Todo TUI application
 Author: SalladShooter
 Requires-Dist: windows-curses; sys_platform == "win32"
